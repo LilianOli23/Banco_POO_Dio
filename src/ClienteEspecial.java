@@ -7,11 +7,11 @@ public class ClienteEspecial {
         conta.agencia = "1234";
         conta.especial = true;
         conta.limiteEspecial = 500;
-        conta.saldo = -10;
+        conta.saldo = 10000;
 
         System.out.println("Saldo da conta " + conta.numero + " = " + conta.saldo);
 
-        boolean saqueEfetuado = conta.realizarSaque(10);
+        boolean saqueEfetuado = conta.realizarSaque(100);
 
         if (saqueEfetuado){
             System.out.println("Saque efetuado com sucesso");
@@ -29,7 +29,7 @@ public class ClienteEspecial {
             System.out.println("Não foi possível realizar saque. Saldo insuficiente");
         }
 
-        System.out.println("Depósito de 500 reais");
+        System.out.println("Depósito de 1500 reais");
         conta.depositar(500);
         conta.consultarSaldo();
 
@@ -46,5 +46,6 @@ public class ClienteEspecial {
         } else {
             System.out.println("Não está usando cheque especial");
         }
+
     }
 }
