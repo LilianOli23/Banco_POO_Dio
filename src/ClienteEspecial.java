@@ -7,7 +7,7 @@ public class ClienteEspecial {
         conta.agencia = "1234";
         conta.especial = true;
         conta.limiteEspecial = 500;
-        conta.saldo = 10000;
+        conta.saldo = 1000;
 
         System.out.println("Saldo da conta " + conta.numero + " = " + conta.saldo);
 
